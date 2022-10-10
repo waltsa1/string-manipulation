@@ -22,6 +22,8 @@ Please note:
 I chose to use Python to solve this problem because Python makes string manipulation so easy. 
 Solving problems is easiest when we have and use the right tool.
 
+This application requires Python 3.7 or higher.
+
 ## Files for submission
 
 For simplicity, all files are in the project's root folder. If this were a larger problem, I would add folders
@@ -32,4 +34,26 @@ to group classes, scripts, and tests accordingly.
 including scenarios that should raise an exception.
 
 ## Dependencies
-The Regex library `re` and the testing framework `pytest` need to be installed.
+The following dependencies need to be installed.
+* `re` - Regex library
+* `pytest` - testing framework 
+
+Python packages can be installed in the virtual environment within PyCharm with the following steps:
+* Go to `View` -> `Tool Windows` -> `Python Packages`
+* Search for the package
+* Click `install`
+
+Install Python packages via the command line:
+
+`> pip3 install <package_name>`
+
+## Running/Testing
+* Via PyCharm
+  * Both the test file and main can be run through PyCharm's play buttons that appear in the gutter of the file.
+* Via commandline
+  * Run `main.py` by executing the following steps:
+    * Navigate to the folder containing the test
+    * Run `> python main.py`
+  * Run `test_capitalization.py` by executing the following steps:
+    * Navigate to the folder containing the test
+    * Run `> pytest` 
